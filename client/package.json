@@ -1,5 +1,5 @@
 {
-  "homepage":"http://Harshtyagi001.github.io/store",
+  "homepage": "http://Harshtyagi001.github.io/store",
   "name": "booking",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^4.0.0",
     "install": "^0.13.0",
     "npm": "^9.2.0",
     "react": "^18.0.0",
@@ -29,9 +30,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
