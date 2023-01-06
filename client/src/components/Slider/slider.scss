@@ -1,0 +1,47 @@
+.slider{
+  height: calc(100vh - 80px);
+  width:100vw;
+  position: relative;
+  overflow: hidden;
+
+  .container{
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    // transform: translateX(-0vw);
+    
+   .imag-div{
+    min-width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    img{
+      min-width: 80vw;
+      height: 100%;
+      object-fit:cover;
+      margin-left: 30px;
+    }
+  }
+  }
+  .icons{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    bottom: 100px;
+    display: flex;
+    gap: 10px;
+
+    .icon{
+      width: 50px;
+      height: 50px;
+      border: 1px solid #999;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      cursor: pointer;
+    }
+  }
+}
